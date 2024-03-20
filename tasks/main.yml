@@ -2,6 +2,7 @@
 # tasks file for roles/cli-utils
 
 - name: Import a key for epel
+  become: true
   ansible.builtin.rpm_key:
     state: present
     key:  https://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-9
