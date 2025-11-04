@@ -18,7 +18,6 @@
 - name: system packages | cli user utils
   become: true
   ansible.builtin.dnf:
-    update_cache: true
     name:
       - bzip2
       - screen
